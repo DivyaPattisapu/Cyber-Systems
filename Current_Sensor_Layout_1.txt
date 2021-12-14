@@ -1,0 +1,127 @@
+Telemetry Viewer File Format v0.4
+
+Grid Settings:
+
+	column count = 8
+	row count = 8
+
+Serial Port Settings:
+
+	port = COM4
+	baud = 115200
+	packet type = ASCII CSVs
+	sample rate = 10000
+
+1 Data Structure Locations:
+
+	location = 0
+	processor index = -1
+	name = AC Current
+	color = 0x0000FF
+	unit = 
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+5 Charts:
+
+	chart type = Time Domain Chart
+	top left x = 0
+	top left y = 0
+	bottom right x = 7
+	bottom right y = 2
+	datasets = 0
+	sample count = 10000
+	autoscale y-axis minimum = false
+	manual y-axis minimum = 500.0
+	autoscale y-axis maximum = false
+	manual y-axis maximum = 3000.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+
+	chart type = Frequency Domain Chart
+	top left x = 0
+	top left y = 3
+	bottom right x = 2
+	bottom right y = 7
+	datasets = 0
+	sample count = 1000
+	total sample count = 10000
+	autoscale minimum power = true
+	manual minimum power = 0.001
+	autoscale maximum power = true
+	manual maximum power = 1.0
+	type = Waterfall View
+	waveform view row count = 60
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	show dft info = true
+
+	chart type = Frequency Domain Chart
+	top left x = 3
+	top left y = 3
+	bottom right x = 5
+	bottom right y = 5
+	datasets = 0
+	sample count = 1000
+	total sample count = 100000
+	autoscale minimum power = true
+	manual minimum power = 0.001
+	autoscale maximum power = true
+	manual maximum power = 1.0
+	type = Live View
+	waveform view row count = 60
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	show dft info = true
+
+	chart type = Histogram Chart
+	top left x = 6
+	top left y = 3
+	bottom right x = 7
+	bottom right y = 5
+	datasets = 0
+	sample count = 1000
+	bin count = 60
+	x-axis is centered = false
+	x-axis center value = 0.0
+	x-axis autoscale minimum = true
+	x-axis manual minimum = -1.0
+	x-axis autoscale maximum = true
+	x-axis manual maximum = 1.0
+	y-axis shows relative frequency = true
+	y-axis shows frequency = false
+	y-axis minimum is zero = true
+	y-axis autoscale maximum = true
+	y-axis manual minimum = 0.0
+	y-axis manual maximum = 1.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+
+	chart type = Time Domain Chart
+	top left x = 3
+	top left y = 6
+	bottom right x = 7
+	bottom right y = 7
+	datasets = 0
+	sample count = 1000
+	autoscale y-axis minimum = true
+	manual y-axis minimum = 500.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 3000.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
